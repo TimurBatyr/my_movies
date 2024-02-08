@@ -1,0 +1,16 @@
+---
+1: !ruby/object:Movie
+  title: Eternal
+  director: Dont Know
+  year: '2021'
+  id: 1
+2: !ruby/object:Movie
+  title: Rush Hour
+  director: Who U R
+  year: '1995'
+  id: 2
+3: !ruby/object:Movie
+  title: Drunk Master
+  director: Who Am I
+  year: '1978'
+  id: 3
