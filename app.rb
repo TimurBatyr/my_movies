@@ -5,13 +5,7 @@ require 'movie_store'
 store = MovieStore.new('movies.yml')
 
 get('/movies') do
-  @movies = []
-  @movies[0] = Movie.new
-  @movies[0].title = 'Avengers'
-  @movies[1] = Movie.new
-  @movies[1].title = 'Ant-Man'
-  @movies[2] = Movie.new
-  @movies[2].title = 'Spider-Man'
+  @movies = store.all_movies
   erb :index
 end
 
@@ -26,4 +20,10 @@ post('/movies/create') do
   @movie.year = params['year']
   store.save(@movie)
   redirect '/movies/new'
+end
+
+get('/movies/:id') do
+  id = params['id'].to_i
+  @movie = store.find(id)
+  erb :show
 end

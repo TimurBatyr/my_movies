@@ -14,3 +14,13 @@
   director: Who Am I
   year: '1978'
   id: 3
+4: !ruby/object:Movie
+  title: Mulan
+  director: Mo De
+  year: '2022'
+  id: 4
+5: !ruby/object:Movie
+  title: Wonder Woman
+  director: Super Man
+  year: '2019'
+  id: 5
